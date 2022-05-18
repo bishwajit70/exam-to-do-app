@@ -4,7 +4,7 @@ import SingleTask from './SingleTask';
 const Home = () => {
     const [tasks, setTasks] = useState([])
     useEffect(() => {
-        const url = 'http://localhost:5000/tasks';
+        const url = 'https://fast-brook-80664.herokuapp.com/tasks';
         fetch(url)
             .then(res => res.json())
             .then(data => setTasks(data))
@@ -17,7 +17,7 @@ const Home = () => {
 
         const proceed = window.confirm('Are you sure to delete the Task?');
         if (proceed) {
-            const url = `http://localhost:5000/tasks/${id}`
+            const url = `https://fast-brook-80664.herokuapp.com/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

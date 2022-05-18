@@ -13,7 +13,8 @@ const Navbar = () => {
     }
     return (
         <div className='py-5 bg-purple-700 text-white'>
-            <Link className='p-2' to='/'>Home</Link>
+
+            {user ? <Link className='p-2' to='/'>Home</Link> : ""}
 
             {user ? <Link className='p-2' to='/addtask'>Add Task</Link> : ""}
 

@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/' element={<RequireAuth><Home></Home></RequireAuth>}></Route>
         <Route path='/addtask' element={<RequireAuth><AddTask></AddTask></RequireAuth>
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>

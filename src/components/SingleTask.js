@@ -8,10 +8,10 @@ const SingleTask = (props) => {
 
     const [completeTask, setCompleteTask] = useState({})
 
-    
+
     const handleComplete = (id) => {
         console.log(id);
-        const url = `http://localhost:5000/tasks/${id}`
+        const url = `https://fast-brook-80664.herokuapp.com/tasks/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => setCompleteTask(data));

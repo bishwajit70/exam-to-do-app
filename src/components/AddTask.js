@@ -9,7 +9,7 @@ const AddTask = () => {
         const tasks = { taskname, description };
         console.log(tasks);
 
-        fetch('http://localhost:5000/tasks', {
+        fetch('https://fast-brook-80664.herokuapp.com/tasks', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
