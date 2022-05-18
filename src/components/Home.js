@@ -17,7 +17,7 @@ const Home = () => {
 
         const proceed = window.confirm('Are you sure to delete the Task?');
         if (proceed) {
-            const url = `https://fast-brook-80664.herokuapp.com/${id}`
+            const url = `https://fast-brook-80664.herokuapp.com/tasks/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -33,6 +33,7 @@ const Home = () => {
 
     }
 
+
     return (
         <div>
             {
@@ -40,7 +41,7 @@ const Home = () => {
                     key={task._id}
                     task={task}
                     handleDelete={handleDelete}
-                    // handleComplete={handleComplete}
+                // handleComplete={handleComplete}
                 ></SingleTask>)
             }
         </div>
