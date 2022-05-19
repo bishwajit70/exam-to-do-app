@@ -19,9 +19,9 @@ const SingleTask = (props) => {
     }
 
     return (
-        <div className=''>
+        <div className='p-10'>
 
-            <div className='bg-purple-300 p-5 rounded-lg'>
+            <div className='bg-purple-300 p-10 rounded-lg'>
                 <h2 className='text-2xl py-2' >{taskname}</h2>
                 <h2>{description}</h2>
             </div>
