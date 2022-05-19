@@ -25,8 +25,8 @@ const AddTask = () => {
     }
 
     return (
-        <div className='w-5/12 border-2 rounded-md shadow-xl p-10 mt-10  mx-auto'>
-            <form onSubmit={handleAddTask} className='mt-6 mx-auto w-9/12'>
+        <div className='lg:w-8/12 border-2 rounded-md shadow-xl p-10 mt-10  mx-auto'>
+            <form onSubmit={handleAddTask} className='mt-6 mx-auto lg:w-full xl:w-9/12'>
                 <input type="text" name='task' placeholder="Task Name" className="input input-bordered w-full " />
                 <input type="text" name='description' placeholder="Description" className="mt-6 input input-bordered w-full " />
                 <button type='submit' className="btn w-full uppercase mt-6 btn-primary" >Add Task</button>

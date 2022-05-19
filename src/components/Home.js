@@ -35,7 +35,7 @@ const Home = () => {
 
 
     return (
-        <div>
+        <div className='rounded-xl grid grid-cols-1 shadow-md mt-10 md:w-11/12 lg:w-11/12 xl:w-11/12 mx-auto p-3 bg-purple-200'>
             {
                 tasks.map(task => <SingleTask
                     key={task._id}

@@ -19,14 +19,15 @@ const SingleTask = (props) => {
     }
 
     return (
-        <div className='flex items-center w-6/12 mx-auto py-5  justify-between'>
-            <div className='text-left w-3/4 mr-5 p-2 bg-purple-300'>
+        <div className=''>
+
+            <div className='bg-purple-300 p-5 rounded-lg'>
                 <h2 className='text-2xl py-2' >{taskname}</h2>
                 <h2>{description}</h2>
             </div>
-            <div className='flex w-1/4 items-center justify-center'>
-                <button className='p-5 mr-5 bg-red-200' onClick={() => handleComplete(_id)}>Complete</button>
-                <button className='p-5 bg-red-500' onClick={() => handleDelete(_id)}>Delete</button>
+            <div className='mt-5 grid grid-cols-1 justify-center items-center'>
+                <button className='p-5 rounded-lg bg-red-300' onClick={() => handleComplete(_id)}>Complete</button>
+                <button className='p-5 mt-5 rounded-lg bg-red-500' onClick={() => handleDelete(_id)}>Delete</button>
             </div>
         </div>
     );
